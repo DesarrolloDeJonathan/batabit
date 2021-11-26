@@ -23,6 +23,10 @@ html {
   font-size: 62.5%;
   font-family: "DM Sans", sans-serif;
 }
+/* avoid breaking styles when downsizing */
+body {
+  min-width: 320px;
+}
 
 header {
   margin: 0 auto; /*contingencia por que no me funciona flex*/
@@ -74,7 +78,7 @@ header img {
   width: 229px;
   height: 4px;
   background-color: var(--off-white);
-  /* Sombra */
+  /* Shadow */
   box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
   border: none;
   border-radius: 5px;
@@ -89,4 +93,23 @@ header img {
   height: 8px;
   margin-left: 10px;
   background-image: url(../assets/icons/down-arrow.svg);
+}
+
+main {
+  /* min-width: 320px; */
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+.main-exchange-container {
+  width: 100%;
+  height: auto;
+  padding: 80px 0 30px;
+  text-align: center;
+}
+.main-exchange-container--title {
+  width: 90%;
+  min-width: 288px;
+  max-width: 900px;
+  margin: 0 auto;
 }
