@@ -139,26 +139,6 @@ main {
   color: #757575;
 }
 /* Tables */
-/* .main-tables-container {
-  margin-top: 40px;
-  width: 65%;
-  align-self: center;
-  min-width: 110px;
-  max-width: 520px;
-  text-align: left;
-}
-.main-currency-table {
-  display: flex;
-  flex-direction: column;
-}
-.currency-table--title p {
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 2.3rem;
-  color: #ff9536;
-  margin-left: 12px;
-  margin-bottom: 12px;
-} */
 .main-currency-table,
 .main-commissions-table {
   width: 70%;
@@ -166,7 +146,6 @@ main {
   max-width: 500px;
   height: 360px;
   margin: 0 auto;
-
   font-family: "Inter", sans-serif;
 }
 .main-currency-table .currency-table--title {
@@ -232,7 +211,7 @@ main {
   color: #757575;
 }
 .table__right::before {
-  content: "$";
+  content: "$ ";
 }
 .currency-table--container .up {
   display: inline-block;
@@ -264,7 +243,8 @@ main {
   border-radius: 8px;
 }
 .commissions-table--date {
-  width: 190px;
+  /* width: 190px; */
+  width: max-content;
   height: 31px;
   margin: 0 auto;
   margin-top: 15px;
@@ -274,7 +254,8 @@ main {
 }
 .currency-table--date p,
 .commissions-table--date p {
-  margin: 7px;
   font-size: 1.2rem;
-  line-height: 1.5px;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: var(--warm-black);
 }
