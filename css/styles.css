@@ -507,7 +507,7 @@ footer .left ul {
 .left li {
   margin: 10px 0;
 }
-.left a:hover {
+.left a {
   text-decoration: none;
   color: var(--just-white);
 }
